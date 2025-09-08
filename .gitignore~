@@ -1,0 +1,47 @@
+# -----------------------------
+# Java / Maven / Spring Boot
+# -----------------------------
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+
+# Maven target folder
+**/target/
+
+# Gradle build folders (if any)
+**/build/
+.gradle/
+build/
+
+# Spring Boot
+*.pid
+spring.log
+
+# -----------------------------
+# IDE / Editor
+# -----------------------------
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/
+
+# -----------------------------
+# OS / System files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Docker
+# -----------------------------
+**/Dockerfile
+**/docker-compose.override.yml
+**/.docker
+*.env
