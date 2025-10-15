@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package auth;
+
+// The Auth gRPC service
+service AuthService {
+  // Fetch user info by userId
+  rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoResponse);
+}
+
+// Request message
+message GetUserInfoRequest {
+  int64 userId = 1;
+}
+
+// Response message
+message GetUserInfoResponse {
+  int64 userId = 1;
+  string name = 2;
+  string email = 3;
+  string phone = 4;
+}
